@@ -1,0 +1,38 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="506.57" Width="811.505">
+    <Grid Margin="0,0,2,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="593*"/>
+            <ColumnDefinition Width="209*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="income" HorizontalAlignment="Left" Height="23" Margin="185,160,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="187" TextChanged="Income_TextChanged"/>
+        <TextBox x:Name="want" HorizontalAlignment="Left" Height="23" Margin="185,245,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="187" TextChanged="Want_TextChanged"/>
+        <TextBox x:Name="expend" HorizontalAlignment="Left" Height="23" Margin="185,206,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="187" TextChanged="TextBox_TextChanged_1"/>
+        <TextBox x:Name="days" HorizontalAlignment="Left" Height="23" Margin="185,286,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="187" TextChanged="Days_TextChanged"/>
+        <TextBlock HorizontalAlignment="Left" Height="26" Margin="81,160,0,0" TextWrapping="Wrap" Text="รายรับ" VerticalAlignment="Top" Width="96"/>
+        <TextBlock HorizontalAlignment="Left" Height="28" Margin="79,208,0,0" TextWrapping="Wrap" Text="รายจ่าย" VerticalAlignment="Top" Width="129" RenderTransformOrigin="0.5,0.5">
+            <TextBlock.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.661"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="79,246,0,0" TextWrapping="Wrap" Text="ราคาของที่อยากได้" VerticalAlignment="Top" Width="118" Height="25"/>
+        <TextBlock HorizontalAlignment="Left" Height="36" Margin="81,287,0,0" TextWrapping="Wrap" Text="จำนวนวัน" VerticalAlignment="Top" Width="99"/>
+        <TextBlock HorizontalAlignment="Left" Height="23" Margin="397,160,0,0" TextWrapping="Wrap" Text="บาท/วัน" VerticalAlignment="Top" Width="76"/>
+        <TextBlock HorizontalAlignment="Left" Height="25" Margin="397,204,0,0" TextWrapping="Wrap" Text="บาท/วัน" VerticalAlignment="Top" Width="54"/>
+        <TextBlock HorizontalAlignment="Left" Height="19" Margin="395,249,0,0" TextWrapping="Wrap" Text="บาท" VerticalAlignment="Top" Width="56"/>
+        <TextBlock HorizontalAlignment="Left" Height="19" Margin="395,290,0,0" TextWrapping="Wrap" Text="วัน" VerticalAlignment="Top" Width="42"/>
+        <Button Content="คำนวณ" HorizontalAlignment="Left" Height="35" Margin="220,323,0,0" VerticalAlignment="Top" Width="112" Click="Button_Click"/>
+
+    </Grid>
+</Window>
